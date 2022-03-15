@@ -1,16 +1,13 @@
-import Counter from "../components/counter";
-import Counter2 from "../components/counter2";
 import '../components/link-icon/link-icon.scss'
+import '../components/grid/grid.scss'
+import '../components/header/header.scss'
+import '../components/main/main.scss'
+import '../components/wrapper/wrapper.scss'
+import '../components/start/start.scss'
+import '../components/footer/footer.scss'
 
 const Main = () => {
-    const counter = new Counter('.counter');
-    const clicked = document.querySelector('.text');
-
-    clicked.addEventListener('click', function () {
-        counter.plus();
-    });
-
-    Counter2('.counter2')
+    console.log(111, 'new message')
 }
 
 export default Main;
