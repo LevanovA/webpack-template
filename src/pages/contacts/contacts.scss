@@ -1,0 +1,23 @@
+@import '../../assets/global-style/mixin';
+@import '../../components/link-icon/link-icon';
+@import '../../components/grid/grid';
+@import '../../components/header/header';
+@import '../../components/main/main';
+@import '../../components/wrapper/wrapper';
+@import '../../components/start/start';
+@import '../../components/icon/icon';
+@import '../../components/footer/footer';
+
+.contacts {
+
+  &__title {
+    @include adaptive-font(60, 24, 1220);
+    color: var(--color-black);
+    line-height: 140%;
+  }
+
+  &__description {
+    @include adaptive-font(20, 16, 1220);
+    line-height: 140%;
+  }
+}

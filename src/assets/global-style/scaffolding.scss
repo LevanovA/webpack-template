@@ -7,12 +7,12 @@ body {
     margin: 0;
 
     font-weight: 400;
-    font-family: $font-main;
+    font-family: var(--font-primery);
     font-size: 16px;
     line-height: 22px;
-    color: $text-main-c;
+    color: var(--color-black);
 
-    background-color: #ffffff;
+    background-color: var(--color-white);
 }
 
 a:hover {

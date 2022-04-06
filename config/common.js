@@ -4,6 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const SpriteLoaderPlugin = require('svg-sprite-loader/plugin');
 
 /*const plugins = () => {
     let base = [
@@ -101,6 +102,7 @@ module.exports = {
                 {from: path.resolve(__dirname, '../src/assets/img'), to: path.resolve(__dirname, '../dist/assets/img')},
             ]
         }),
+        new SpriteLoaderPlugin({ plainSprite: true })
     ],
     optimization: {
         splitChunks: {
@@ -116,10 +118,19 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.(png|jpg|jpeg|svg)/,
+                test: /\.(png|jpg|jpeg)/,
                 type: 'asset/resource',
                 generator: {
                     filename: 'assets/img/[name][ext]'
+                }
+            },
+            {
+                test: /\.svg$/,
+                loader: 'svg-sprite-loader',
+                options: {
+                    extract: true,
+                    // output: 'assets/img'
+                    publicPath: 'assets/img/'
                 }
             },
             {
