@@ -78,6 +78,7 @@ const SpriteLoaderPlugin = require('svg-sprite-loader/plugin');
 module.exports = {
     context: path.resolve(__dirname, '../src'),
     entry: {
+        global: './global/global.js',
         main: './pages/main/main.js',
         contacts: './pages/contacts/contacts.js'
     },
@@ -86,13 +87,13 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: './pages/main/main.html',
             filename: 'index.html',
-            chunks: [`main`, 'vendor'],
+            chunks: [`main`, 'global', 'vendor'],
             inject: 'body'
         }),
         new HtmlWebpackPlugin({
             template: './pages/contacts/contacts.html',
             filename: 'contacts.html',
-            chunks: [`contacts`, 'vendor'],
+            chunks: [`contacts`, 'global', 'vendor'],
             inject: 'body'
         }),
         new CleanWebpackPlugin(),
@@ -130,7 +131,7 @@ module.exports = {
                 options: {
                     extract: true,
                     // output: 'assets/img'
-                    publicPath: 'assets/img/'
+                    publicPath: 'assets/'
                 }
             },
             {
