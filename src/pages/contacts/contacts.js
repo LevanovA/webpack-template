@@ -1,13 +1,15 @@
 import './contacts.scss';
-// import TabsFunc from "../../components/TabsFunc";
-import TabsClass from "../../components/TabsClass";
-import DropDownBlock from "../../components/DropDownBlockFunc";
+// import TabsFunc from "../../components/other/TabsFunc";
+import TabsClass from "../../components/other/TabsClass";
+// import DropDownBlock from "../../components/other/DropDownBlockFunc";
+import DropdownBlockClass from "../../components/other/DropdownBlockClass";
 
 const Contacts = () => {
     // TabsFunc();
 
     new TabsClass('.tabs');
-    DropDownBlock();
+    // DropDownBlock();
+    new DropdownBlockClass('.dropdown-block')
 
 }
 
