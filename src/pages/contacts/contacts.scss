@@ -1,7 +1,8 @@
 @import '../../assets/global-style/mixin';
 @import '../../components/link-icon/link-icon';
-@import '../../components/other/Start/start';
+@import '../../components/buttons/Button/Button';
 @import '../../components/images/Icon/icon';
+@import '../../components/other/Start/start';
 @import '../../components/structure/Grid/grid';
 @import '../../components/structure/Header/header';
 @import '../../components/structure/Main/main';
@@ -12,4 +13,10 @@
 
 .contacts {
 
+}
+
+.slider__img {
+  //max-width: 700px;
+  text-align: center;
+  margin: 0 auto;
 }
