@@ -7,9 +7,14 @@ import DropdownBlockClass from "../../components/other/DropdownBlockClass";
 const Contacts = () => {
     // TabsFunc();
 
-    new TabsClass('.tabs');
+    const tabs = document.querySelectorAll('.tabs');
+
+    for (let i = 0; i < tabs.length; i++) {
+        new TabsClass(tabs[i]);
+    }
+    // new TabsClass('.tabs');
     // DropDownBlock();
-    new DropdownBlockClass('.dropdown-block')
+    new DropdownBlockClass('.dropdown-block');
 
 }
 

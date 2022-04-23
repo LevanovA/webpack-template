@@ -1,23 +1,15 @@
 @import '../../assets/global-style/mixin';
 @import '../../components/link-icon/link-icon';
+@import '../../components/other/Start/start';
+@import '../../components/images/Icon/icon';
 @import '../../components/structure/Grid/grid';
 @import '../../components/structure/Header/header';
 @import '../../components/structure/Main/main';
 @import '../../components/structure/Wrapper/wrapper';
-@import '../../components/other/Start/start';
-@import '../../components/images/Icon/icon';
 @import '../../components/structure/Footer/footer';
+@import '../../components/typography/Title/Title';
+@import '../../components/typography/Text/Text';
 
 .contacts {
 
-  &__title {
-    @include adaptive-font(60, 24, 1220);
-    color: var(--color-black);
-    line-height: 140%;
-  }
-
-  &__description {
-    @include adaptive-font(20, 16, 1220);
-    line-height: 140%;
-  }
 }

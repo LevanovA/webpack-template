@@ -2,7 +2,7 @@ import './TabsClass.scss'
 
 export default class TabsClass {
     constructor(tabs) {
-        this.$tab = document.querySelector(tabs);
+        this.$tab = tabs;
         this.$tabName = this.$tab.querySelectorAll('.tabs__name');
         this.$tabItem = this.$tab.querySelectorAll('.tabs__item');
 

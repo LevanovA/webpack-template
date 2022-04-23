@@ -9,12 +9,12 @@
         font-size: 14px;
         line-height: 20px;
         letter-spacing: 0.02em;
-        color: blue;
+        color: var(--color-blue);
     }
 
     &__svg {
         flex-shrink: 0;
-        fill: blue;
+        fill: var(--color-blue);
 
         &--red {
             fill: #E7413A;
