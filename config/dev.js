@@ -1,29 +1,29 @@
-const path = require("path");
-const webpack = require("webpack");
-const { merge } = require("webpack-merge");
-const MiniCssExtractPlugin = require("mini-css-extract-plugin"); // Служит для попадания стилей в нужную папку билда
+const path = require('path');
+const webpack = require('webpack');
+const { merge } = require('webpack-merge');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin'); // Служит для попадания стилей в нужную папку билда
 
-const common = require("./common");
-const { emitWarning } = require("process");
+const common = require('./common');
+const { emitWarning } = require('process');
 
 module.exports = merge(common, {
-  mode: "development",
-  devtool: "source-map",
-  output: {
-    filename: "js/[name].js",
-    path: path.resolve(__dirname, "../dist"),
-  },
-  stats: "errors-warnings",
-  devServer: {
-    compress: true,
-    hot: true,
-    open: true,
-    port: 4200,
-  },
-  plugins: [
-    new MiniCssExtractPlugin({
-      filename: "css/[name].css",
-    }),
-    new webpack.HotModuleReplacementPlugin(),
-  ],
+    mode: 'development',
+    devtool: 'source-map',
+    output: {
+        filename: 'js/[name].js',
+        path: path.resolve(__dirname, '../dist'),
+    },
+    stats: 'errors-warnings',
+    devServer: {
+        compress: true,
+        hot: true,
+        open: true,
+        port: 4200,
+    },
+    plugins: [
+        new MiniCssExtractPlugin({
+            filename: 'css/[name].css',
+        }),
+        new webpack.HotModuleReplacementPlugin(),
+    ],
 });
