@@ -1,1 +1,1 @@
-export { default } from './DropdownBlockClass'
+export { default } from './DropdownBlockClass';

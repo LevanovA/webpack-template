@@ -7,13 +7,13 @@ https://hankchizljaw.com/wrote/a-modern-css-reset/
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 /* Remove default padding */
 ul,
 ol {
-    padding: 0;
+	padding: 0;
 }
 
 /* Remove default margin */
@@ -31,24 +31,24 @@ figcaption,
 blockquote,
 dl,
 dd {
-    margin: 0;
+	margin: 0;
 }
 
 /* Remove list styles on ul, ol elements with a class attribute */
 ul,
 ol {
-    list-style: none;
+	list-style: none;
 }
 
 /* A elements that don't have a class get default styles */
 a:not([class]) {
-    text-decoration-skip-ink: auto;
+	text-decoration-skip-ink: auto;
 }
 
 /* Make images easier to work with */
 img {
-    max-width: 100%;
-    display: block;
+	max-width: 100%;
+	display: block;
 }
 
 /* Inherit fonts for inputs and buttons */
@@ -56,26 +56,26 @@ input,
 button,
 textarea,
 select {
-    font: inherit;
+	font: inherit;
 }
 
 /* Remove all animations and transitions for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
-    * {
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: 0.01ms !important;
-        scroll-behavior: auto !important;
-    }
+	* {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+		scroll-behavior: auto !important;
+	}
 }
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-    /* display: none; <- Crashes Chrome on hover */
-    -webkit-appearance: none;
-    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+	/* display: none; <- Crashes Chrome on hover */
+	-webkit-appearance: none;
+	margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
 }
 
-input[type=number] {
-    -moz-appearance:textfield; /* Firefox */
+input[type='number'] {
+	-moz-appearance: textfield; /* Firefox */
 }

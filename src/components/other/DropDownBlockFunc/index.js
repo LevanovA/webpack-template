@@ -1,1 +1,1 @@
-export { default } from './DropDownBlockFunc'
+export { default } from './DropDownBlockFunc';
