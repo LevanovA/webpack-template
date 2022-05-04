@@ -18,5 +18,5 @@ indent_style = tab
 insert_final_newline = true
 trim_trailing_whitespace = true
 
-[*.md]
-trim_trailing_whitespace = false
+[*.{json,md}]
+indent_style = 2

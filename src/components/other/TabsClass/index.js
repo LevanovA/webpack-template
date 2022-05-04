@@ -1,1 +1,1 @@
-export { default } from './TabsClass'
+export { default } from './TabsClass';
