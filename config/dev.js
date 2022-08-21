@@ -16,9 +16,10 @@ module.exports = merge(common, {
     stats: 'errors-warnings',
     devServer: {
         compress: true,
-        hot: true,
+        hot: false,
         open: true,
         port: 4200,
+        watchFiles: ['../src/**/*'],
     },
     plugins: [
         new MiniCssExtractPlugin({
